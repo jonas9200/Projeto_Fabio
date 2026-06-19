@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantiObra - Clientes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">QuantiObra</div>
+      <div class="subtitle">Quantitativos e gestão de obras</div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="clientes.html">Clientes</a>
+        <a href="obras.html">Obras</a>
+        <a href="quantitativos.html">Quantitativos</a>
+        <a href="orcamentos.html">Orçamentos</a>
+        <a href="relatorios.html">Relatórios</a>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="topbar"><div><h1>Clientes</h1><p class="status">Cadastro de clientes da obra</p></div></div>
+      <section class="panel">
+        <h2>Novo Cliente</h2>
+        <form id="formCliente">
+          <div class="form-grid">
+            <label>Nome<input name="nome" required /></label>
+            <label>Telefone<input name="telefone" /></label>
+            <label>WhatsApp<input name="whatsapp" /></label>
+            <label>E-mail<input name="email" type="email" /></label>
+            <label>Cidade<input name="cidade" /></label>
+            <label>Estado<input name="estado" maxlength="2" /></label>
+          </div>
+          <label style="margin-top:14px">Observações<textarea name="observacoes"></textarea></label>
+          <div class="actions"><button class="btn" type="submit">Salvar Cliente</button><button class="btn secondary" type="reset">Limpar</button></div>
+        </form>
+      </section>
+      <section class="panel">
+        <h2>Clientes cadastrados</h2>
+        <div class="empty">A listagem será conectada à API na próxima etapa.</div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
