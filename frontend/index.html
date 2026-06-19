@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantiObra - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">QuantiObra</div>
+      <div class="subtitle">Quantitativos e gestão de obras</div>
+      <nav class="nav">
+        <a class="active" href="index.html">🏠 Dashboard</a>
+        <a href="clientes.html">👷 Clientes</a>
+        <a href="obras.html">🏗 Obras</a>
+        <a href="quantitativos.html">📐 Quantitativos</a>
+        <a href="orcamentos.html">💰 Orçamentos</a>
+        <a href="relatorios.html">📄 Relatórios</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="topbar">
+        <div>
+          <h1>Dashboard</h1>
+          <p class="status">Visão geral do sistema QuantiObra</p>
+        </div>
+        <a class="btn" href="clientes.html">Novo Cliente</a>
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Clientes</h3>
+          <p>Clientes cadastrados</p>
+          <div class="number" id="totalClientes">0</div>
+        </div>
+        <div class="card">
+          <h3>Obras</h3>
+          <p>Obras em andamento</p>
+          <div class="number" id="totalObras">0</div>
+        </div>
+        <div class="card">
+          <h3>Quantitativos</h3>
+          <p>Levantamentos realizados</p>
+          <div class="number" id="totalQuantitativos">0</div>
+        </div>
+        <div class="card">
+          <h3>Orçamentos</h3>
+          <p>Orçamentos gerados</p>
+          <div class="number" id="totalOrcamentos">0</div>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:22px">
+        <h2>Próximos módulos</h2>
+        <p class="status">Cadastro de clientes, obras, quantitativo de alvenaria e orçamento básico.</p>
+      </section>
+
+      <div class="footer">QuantiObra v0.1 - Sem logo por enquanto</div>
+    </main>
+  </div>
+</body>
+</html>
